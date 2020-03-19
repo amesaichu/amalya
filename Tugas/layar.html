@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width , initial-scale.0">
+        <title>Layar</title>
+        
+    </head>
+
+    <style>
+
+        .container{
+            margin: 50px auto;
+            width: 600px;
+            height: 500px;
+        }
+
+        .kotaklayar{
+            width: 600px;
+            height: 300px;
+            background-color: whitesmoke;
+            border: 5px solid black;
+        }
+
+        .kotaktombol{
+            width: 600px;
+            height: 90px;
+            border: 5px solid;
+
+        }
+
+        .tombolnya{
+            width: 140px;
+            height: 80px;
+            border: 2px solid black;
+            margin: 5px 5px 5px 5px;
+            float: left;
+            box-sizing: border-box;
+
+        }
+
+        .btn {
+            box-sizing: border-box;
+            -webkit-appearance: none;
+                -moz-appearance: none;
+                    appearance: none;
+            background-color: transparent;
+            border: 2px solid #e74c3c;
+            border-radius: 0.6em;
+            color: #e74c3c;
+            cursor: pointer;
+            display: flex;
+            align-self: center;
+            font-size: 1rem;
+            
+            font-weight: 400;
+            line-height: 1;
+            margin: 40px auto;
+            padding: 1.2em 2.8em;
+            text-decoration: none;
+            text-align: center;
+            text-transform: uppercase;
+            font-family: 'Montserrat', sans-serif;
+            font-weight: 700;
+            color: black;
+            }
+        .btn:hover, .btn:focus {
+            color: black;
+            outline: 0;
+        }
+        .fourth {
+            border-color: #f1c40f;
+            color: black;
+            background-image: linear-gradient(45deg, #f1c40f 50%, transparent 50%);
+            background-position: 100%;
+            background-size: 400%;
+            transition: background 300ms ease-in-out;
+        }
+        .fourth:hover {
+            background-position: 0;
+        }
+
+        .credit{
+                
+                border-radius: 0.6em;
+                font-style: oblique;
+                font-size: x-large;
+                right: 0px;
+                width: 420px;
+                margin: 10px auto;
+                height: 35px;
+                text-shadow: #FFF 0px 0px 5px, #FFF 0px 0px 15px, #FF2D95 0px 0px 40px, #FF2D95 0px 0px 50px, 2px 2px 2px rgba(5,73,86,0.35);
+                color: #FFFFFF;
+                background: black;
+                }
+
+        
+        
+    </style>
+
+
+    <body>
+        <div class="credit">
+            183140914111028
+            Amalya Berliana Saichu
+        </div>
+
+        <div class="container">
+
+            <div id="tombol" class="kotaklayar">
+            </div>
+
+                <div class="kotaktombol">
+
+                    <div class="tombolnya fourth" onclick="tombol1()" style="border-color: royalblue; background-image: linear-gradient(45deg, royalblue 50%, transparent 50%); ">
+               
+                    </div>
+
+                    <div class="tombolnya fourth" onclick="tombol2()" style="border-color: red; background-image: linear-gradient(45deg, red 50%, transparent 50%);">
+
+                    </div>
+
+                    <div class="tombolnya fourth" onclick="tombol3()" style="border-color:green; background-image: linear-gradient(45deg, green 50%, transparent 50%);">
+
+                    </div>
+
+                    <div class="tombolnya fourth" onclick="tombol4()" style="border-color: yellow; background-image: linear-gradient(45deg, yellow 50%, transparent 50%);">
+
+                    </div>
+
+
+                </div>
+
+                <button class="btn fourth" onclick="reset()" id="buttonreset"> Reset </button>
+
+           
+
+
+            
+        </div>
+        
+    </body>
+
+    <script>
+
+        function tombol1() {
+            document.getElementById('tombol').style.backgroundColor="blue";
+        }
+
+        function tombol2() {
+            document.getElementById('tombol').style.backgroundColor="red";
+        }
+
+        function tombol3() {
+            document.getElementById('tombol').style.backgroundColor="green";
+        }
+
+        function tombol4() {
+            document.getElementById('tombol').style.backgroundColor="yellow";
+        }
+
+        function reset(){
+            document.getElementById('tombol').style.backgroundColor="whitesmoke";
+        }
+
+    </script>
+
+    </html>

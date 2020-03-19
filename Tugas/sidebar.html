@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="widht=device-width , initial-scale.0">
+        <title>Document</title>
+        
+    </head>
+
+    <style>
+        .sidebar1{
+            width:200px ;
+            height: 100%;
+            background-color: #ffff99;
+            position: fixed;
+            overflow: auto;
+            top: 0;
+            left: 0;
+            transition: width 1s;
+        }
+
+        .main1{
+            /* width: 700px;
+            height: 500px; */
+            height: 100%;
+            background-color: white;
+            margin-left: 200px;
+            padding: 10px;
+            box-sizing: border-box;
+            overflow: auto;
+        }
+
+
+        .sidebar{
+            width:0px ;
+            height:100%;
+            background-color: #ffff99;
+            position: fixed;
+            overflow: auto;
+            transition: width 0.6s;
+        }
+
+        .main{
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            height: 100%;
+            background-color: white;
+            /* margin-left: 200px; */
+        }
+
+        .sidebar1 span{
+            float: right;
+        }
+
+        ul.a {
+            margin-top: 30px;
+        }
+
+        li{
+            margin-top: 12px;
+            box-sizing: border-box;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-size: 20px;
+            font-style: oblique;
+        }
+
+                .dropbtn {
+        padding: 16px;
+        font-size: 16px;
+        border: none;
+        cursor: pointer;
+        }
+
+        .dropdown {
+        position: relative;
+        display: inline-block;
+        }
+
+        .dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f9f9f9;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+        }
+
+        .dropdown-content a {
+        color: black;
+        padding: 12px 16px;
+        text-decoration: none;
+        display: block;
+        }
+
+        .dropdown-content a:hover {background-color: #f1f1f1}
+
+        .dropdown:hover .dropdown-content {
+        display: block;
+        }
+
+        .dropdown:hover .dropbtn {
+        background-color: #faf60e;
+        }
+
+
+        .konten{
+            
+            margin: auto;
+            padding: 1px;
+            box-sizing: border-box;
+        }
+
+        .satuankonten{
+            height: 400px;
+            float: left;
+             margin-left: 32px;
+            width: 250px;
+            text-align: center;
+            box-sizing: border-box;
+        }
+
+        .konten1{
+            margin-top: 30px;
+            height: auto;
+            width: 1300px;
+            margin-left: auto;
+           
+            box-sizing: border-box;
+        }
+
+        .konten2{
+            height: 800px;
+            width: 100%;
+        }
+
+        .banner{
+            background-image: url(img/program.png);
+            width: 100%;
+            height: 400px;
+        }
+
+
+        
+
+
+
+    </style>
+
+    <body>
+        
+ 
+
+    <div id="klikyas" class="sidebar">
+    <span style="font-size: 30px; cursor: pointer; " onclick="openClose()">&#x274C</span>
+        <ul class="a">
+            <h4>MENU</h4>
+            <li style="list-style-image: url(img/home.png);"><a href="#home">Home</a> </li>
+            <li style="list-style-image: url(img/user.png);"><a href="#home">Profil</a></li>
+            <li style="list-style-image: url(img/telp.png);"><a href="#home">Contact Us</a></li>
+            <div class="dropdown">
+    <br>
+            <li class="dropbtn" style="list-style-image: url(img/category.png);">Info Category
+                <div class="dropdown-content">
+                    <a href="#">Blog</a>
+                    <a href="#">Pengumuman</a>
+                    <a href="#">Penelitian</a>
+                    </div>
+            </li>
+            </div>
+        </ul> 
+
+
+    </div>
+
+    <div id="klikya2" class="main">
+
+        <span  style="font-size: 30px; cursor: pointer;" onclick="openNav()">&#9776</span>
+        
+
+        <div class="konten2">
+            <br>
+        183140914111028 - Amalya
+        <h1>Belajar Ngoding</h1>
+        <div class="banner">
+
+        </div>
+        <p style="background-color: blanchedalmond; padding: 7px; box-sizing: border-box; border: 2px solid grey;">Tidak seperti anggapan banyak orang, Lorem Ipsum bukanlah teks-teks yang diacak. Ia berakar dari sebuah 
+            naskah sastra latin klasik dari era 45 sebelum masehi, hingga bisa dipastikan usianya telah mencapai lebih dari 2000 tahun. Richard McClintock, seorang professor Bahasa Latin dari Hampden-Sidney 
+            College di Virginia, mencoba mencari makna salah satu kata latin yang dianggap paling tidak jelas, yakni 
+            consectetur, yang diambil dari salah satu bagian Lorem Ipsum. Setelah ia mencari maknanya di di literatur 
+            klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+            bagian 1.10.32.
+
+            College di Virginia, mencoba mencari makna salah satu kata latin yang dianggap paling tidak jelas, yakni 
+            consectetur, yang diambil dari salah satu bagian Lorem Ipsum. Setelah ia mencari maknanya di di literatur 
+            klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+            bagian 1.10.32.
+
+            Bagian standar dari teks Lorem Ipsum yang digunakan sejak tahun 1500an kini di reproduksi kembali di bawah ini 
+            untuk mereka yang tertarik. Bagian 1.10.32 dan 1.10.33 dari "de Finibus Bonorum et Malorum" karya Cicero juga di
+            reproduksi persis seperti bentuk aslinya, diikuti oleh versi bahasa Inggris yang berasal dari terjemahan tahun
+            1914 oleh H. Rackham.</p>
+
+        </div>
+
+            <div class="konten1">
+                <div class="konten">
+                    <div class="satuankonten">
+                        <img src="img/vs.png" alt="1" height="80px"  width="80px">
+                        <h5>Visual Studio</h5>
+                        <p>klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+                            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+                            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+                            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+                            bagian 1.10.32.</p>
+                        </div>
+
+                    <div class="satuankonten">
+                        <img src="img/vs.png" alt="1" height="80px"  width="80px">
+                        <h5>Visual Studio</h5>
+                        <p>klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+                            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+                            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+                            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+                            bagian 1.10.32.</p>
+                    </div>
+
+
+
+                    <div class="satuankonten">
+                        <img src="img/vs.png" alt="1" height="80px"  width="80px">
+                        <h5>Visual Studio</h5>
+                        <p>klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+                            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+                            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+                            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+                            bagian 1.10.32.</p>
+                    </div>
+
+
+
+                    <div class="satuankonten">
+                        <img src="img/vs.png" alt="1" height="80px"  width="80px">
+                        <h5>Visual Studio</h5>
+                        <p>klasik, ia mendapatkan sebuah sumber yang tidak bisa diragukan. Lorem Ipsum berasal dari bagian 1.10.32 dan 
+                            1.10.33 dari naskah "de Finibus Bonorum et Malorum" (Sisi Ekstrim dari Kebaikan dan Kejahatan) karya Cicero, 
+                            yang ditulis pada tahun 45 sebelum masehi. BUku ini adalah risalah dari teori etika yang sangat terkenal pada 
+                            a Renaissance. Baris pertama dari Lorem Ipsum, "Lorem ipsum dolor sit amet..", berasal dari sebuah baris di 
+                            bagian 1.10.32.</p>
+                    </div>
+
+               
+                </div>
+            </div>
+            
+
+    </div>
+
+
+
+
+
+
+
+
+</body>
+
+<script>
+ function openNav(){
+    
+    // document.getElementById('klikya').className="main1";
+    document.getElementById('klikyas').className="sidebar1";
+    document.getElementById('klikya2').className="main1";
+    }
+
+    function openClose(){
+        document.getElementById('klikyas').className="sidebar";
+        document.getElementById('klikya2').className="main";
+
+    }
+
+</script>
+</html>

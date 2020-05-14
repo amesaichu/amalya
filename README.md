@@ -6,3 +6,6 @@ Berikut Capture-nya :
 
 Untuk file html blog tersebut ada pada
 amalya/Tugas/tugas1.html
+
+
+Untuk uas individu berada di folder vue js + ajax
